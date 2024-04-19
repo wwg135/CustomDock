@@ -25,14 +25,19 @@
 }
 
 - (void)twitterlink {
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://twitter.com/brianvs"]];
-} 
-
-- (void)donate
-{
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://paypal.me/i0stweak3r"]];
+	if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://twitter.com/brianvs"]
+		options:@{}
+		completionHandler:nil];
+	}
 }
 
+- (void)donate {
+	if ([[UIApplication sharedApplication] respondsToSelector:@selector(openURL:options:completionHandler:)]) {
+		[[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://paypal.me/i0stweak3r"]
+		options:@{}
+		completionHandler:nil];
+	}
+}
 
 @end
-

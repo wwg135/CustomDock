@@ -1,9 +1,9 @@
-Package: com.i0stweak3r.customdock
+Package: customdock
 Name: CustomDock
 Depends: mobilesubstrate, preferenceloader
 Version: 1.0.2
 Architecture: iphoneos-arm
-Description: Simple tweak with sliders to adjust dock height, offset of icons inside, and opacity. All devices supported except iPad. Tested on 9.3.3, 10.0.1 11.1.2 and 11.3.1 12.4 and 13.2.2
+Description: 一个简单的插件优化工具,可以通过滑块来调节 Dock 的高度、图标在内部的位置偏移量以及透明度。它支持所有设备,除了 iPad 外。
 Maintainer: i0s_tweak3r
 Author: i0s_tweak3r
 Section: Tweaks

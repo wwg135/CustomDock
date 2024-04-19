@@ -47,19 +47,3 @@ const CGFloat firmware =  [[UIDevice currentDevice].systemVersion floatValue];
      else { return %orig; }
 }
 %end
-
-%hook SBIconView
-- (void)setLabelHidden:(bool)arg1 {
-}
-%end
-
-%hook SBIconView
-- (id)_legibilitySettingsWithStyle:(long long)arg1 primaryColor:(id)arg2 {
-	return %orig;
-}
-%end
-
-%hook SBIconView
-- (void)setLegibilitySettings:(id)arg1 {
-}
-%end

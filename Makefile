@@ -6,7 +6,7 @@ DEBUG = 0
 
 include $(THEOS)/makefiles/common.mk
 
-TWEAK_NAME = CustomDock
+TWEAK_NAME = DockHeight
 CustomDock_FILES = Tweak.xm
 CustomDock_FRAMEWORKS = UIKit Foundation
 

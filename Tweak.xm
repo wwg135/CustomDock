@@ -1,6 +1,8 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
 
+const CGFloat firmware =  [[UIDevice currentDevice].systemVersion floatValue];
+
 //Several updated methods for iOS 13
 %hook SBRootFolderView
 -(UIEdgeInsets)_statusBarInsetsForDockEdge:(unsigned long long)arg1 dockOffscreenPercentage:(double)arg2 {
@@ -32,4 +34,16 @@
     return %orig(arg1);
 }
 
+%end
+
+%hook SBDockView 
+-(CGFloat)dockHeight {
+     CGFloat screenHeight= [[UIScreen mainScreen]bounds].size.height;
+     CGFloat screenWidth = [[UIScreen mainScreen]bounds].size.width;
+
+     if((screenHeight>screenWidth)) {
+          return 160;
+     }
+     else { return %orig; }
+}
 %end

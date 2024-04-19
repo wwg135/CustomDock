@@ -20,13 +20,13 @@
 			<key>icon</key>
 			<string>CustomDock@2x.png</string>
 			<key>label</key>
-			<string>Custom (simple) Dock</string>
+			<string>自定义 Dock</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Turns on the tweak. Other settings won't work unless this switch is on.</string>
+			<string>请启用插件开关，否则其他设置将无法工作。</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -40,13 +40,13 @@
 			<key>key</key>
 			<string>Enabled</string>
 			<key>label</key>
-			<string>Enable tweak</string>
+			<string>启用</string>
 		</dict>
 		<dict>
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Adjust dock opacity with the slider. The lower the number the more transparent it'll be.</string>
+			<string>使用滑块调整 Dock 的不透明度。数字越低，它将变得更透明。</string>
 		</dict>
 		<dict>
 			
@@ -71,7 +71,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Adjust dock position with slider. Double-tap either of slider's side edges to enter manually. Negative values raise dock higher on the screen, positive values lower or hide it. Around 18.0 = icons sitting on bottom edge, 80.0 = hidden dock, just dots showing.</string>
+			<string>使用滑块调整 Dock 的位置。双击滑块的任一侧边来手动输入数值。负值将 Dock 提高到屏幕上方，正值将其降低或隐藏。大约18.0表示图标位于底部边缘，80.0表示隐藏 Dock，仅显示点状图标。</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -96,7 +96,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Allows changing the actual height instead of just the offscreen amount. Only works in Portrait orientation.</string>
+			<string>允许更改实际高度，而不仅仅是屏幕之外的高度，仅在纵向方向上有效。</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -110,7 +110,7 @@
 			<key>key</key>
 			<string>dockHeightEnabled</string>
 			<key>label</key>
-			<string>Enable dock height</string>
+			<string>启用</string>
 		</dict>
 
                 
@@ -118,7 +118,7 @@
 			<key>cell</key>
 			<string>PSGroupCell</string>
 			<key>footerText</key>
-			<string>Adjust dock height with slider. This method changes the actual height and bounds of the dock when horizontal (Portrait mainly unless a tweak is used for landscape).</string>
+			<string>使用滑块调整 Dock 的高度，这种方法会在水平方向（主要是纵向，除非使用了横向的调整）改变 Dock 的实际高度和边界。</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -148,7 +148,7 @@
 			<key>cell</key>
 			<string>PSTextCell</string>
 			<key>label</key>
-			<string>Made by i0s_tweak3r. </string>
+			<string>由 i0s_tweak3r 制作. </string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -158,7 +158,7 @@
 			<key>icon</key>
 			<string>twitter@2x.png</string>
 			<key>label</key>
-			<string>Developer twitter</string>
+			<string>开发者推特</string>
 		</dict>
 		<dict>
 			<key>action</key>
@@ -168,7 +168,7 @@
 			<key>icon</key>
 			<string>paypal.png</string>
 			<key>label</key>
-			<string>Show some love.</string>
+			<string>捐赠</string>
 		</dict>
 		<dict>
 			<key>cell</key>
@@ -180,7 +180,7 @@
 			<key>cell</key>
 			<string>PSTextCell</string>
 			<key>label</key>
-			<string>More improvements coming soon.</string>
+			<string>更多改变即将到来。</string>
 		</dict>
 	</array>
 	<key>title</key>

@@ -24,7 +24,7 @@ static bool kDockHeightEnabled;
 //Several updated methods for iOS 13
 
 -(UIEdgeInsets)_statusBarInsetsForDockEdge:(unsigned long long)arg1 dockOffscreenPercentage:(double)arg2 {
-    if(kEnabled && (firmware >= 13.0)) {
+    if(kEnabled && (firmware >= 14.0)) {
         dockheightfrac= kdockPercent / 100;
         arg2= dockheightfrac;
         return %orig(arg1,arg2);
@@ -33,7 +33,7 @@ static bool kDockHeightEnabled;
 }
 
 -(double)currentDockOffscreenFraction {
-    if(kEnabled && (firmware >=13.0)) {
+    if(kEnabled && (firmware >=14.0)) {
         dockheightfrac= kdockPercent / 100;
         return dockheightfrac;
     }
@@ -95,7 +95,7 @@ return %orig(arg1);
 //NEW IOS 13 CLASS ACTUALLY A PROTOCOL
 %hook SBDockOffscreenFractionModifying
 -(void)setDockOffscreenFraction:(double)arg1 {
-if(kEnabled && (firmware >= 13.0)) {
+if(kEnabled && (firmware >= 14.0)) {
     dockheightfrac= kdockPercent / 100;
     arg1= dockheightfrac;
     return %orig(arg1);

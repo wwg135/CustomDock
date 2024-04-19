@@ -9,17 +9,17 @@
 }
 
 -(void)setDockOffscreenFraction:(double)arg1 {
-    arg1= 150;
+    arg1= 0.05;
     return %orig(arg1);
 }
 
 -(void)_setDockOffscreenFraction:(double)arg1 {
-    arg1= 150;
+    arg1= 0.05;
     return %orig(arg1);
 }
 
 -(void)_applyDockOffscreenFraction:(CGFloat)arg1 {
-    arg1= 150;
+    arg1=0.05;
     return %orig(arg1);
 }
 
@@ -28,7 +28,7 @@
 //NEW IOS 13 CLASS ACTUALLY A PROTOCOL
 %hook SBDockOffscreenFractionModifying
 -(void)setDockOffscreenFraction:(double)arg1 {
-    arg1= 150;
+    arg1= 0.05;
     return %orig(arg1);
 }
 

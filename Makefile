@@ -1,9 +1,9 @@
-ARCHS = arm64 arm64e armv7 armv7s
-TARGET = iphone:clang:11.2:8.0
-#CFLAGS = -fobjc-arc
-#THEOS_PACKAGE_DIR_NAME = debs
-GO_EASY_ON_ME = 1
+THEOS_PACKAGE_SCHEME=rootless
+TARGET := iphone:clang:latest:14.0
+ARCHS = arm64 arm64e
 DEBUG = 0
+FINALPACKAGE = 1
+
 include $(THEOS)/makefiles/common.mk
 
 TWEAK_NAME = CustomDock

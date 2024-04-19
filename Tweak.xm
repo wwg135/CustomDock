@@ -139,7 +139,7 @@ kDockHeightEnabled = [prefs boolForKey:@"dockHeightEnabled"];
 //Default is @NO so no need to use objectForKey
 
 kDockHeight = [[prefs objectForKey:@"dockHeight"] floatValue] ? [[prefs objectForKey:@"dockHeight"]floatValue] : 96.f;
- Check if a value has been set and use 96 as the default if the slider hasn't been moved yet.
+//Check if a value has been set and use 96 as the default if the slider hasn't been moved yet.
 }
 
 %ctor {
@@ -150,5 +150,3 @@ kDockHeight = [[prefs objectForKey:@"dockHeight"] floatValue] ? [[prefs objectFo
                                     CFNotificationSuspensionBehaviorDeliverImmediately);
     loadPrefs();
 }
-
-

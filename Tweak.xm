@@ -63,10 +63,3 @@ const CGFloat firmware =  [[UIDevice currentDevice].systemVersion floatValue];
 - (void)setLegibilitySettings:(id)arg1 {
 }
 %end
-
-%hook SBRootFolderView
-- (void)_applyDockOffscreenFraction:(double)arg1 {
-	arg1 = -0.07000000000000001;
-	%orig;
-}
-%end

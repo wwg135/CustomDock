@@ -9,11 +9,6 @@
     return %orig(arg1,arg2);
 }
 
--(double)currentDockOffscreenFraction {
-    dockheightfrac= 0;
-    return dockheightfrac;
-}
-
 -(void)setDockOffscreenFraction:(double)arg1 {
     arg1= 150;
     return %orig(arg1);
